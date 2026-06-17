@@ -1,5 +1,5 @@
 
-/* Função: Cria as variáveis globais do site (modo claro). Define fundo azul claro, texto e cor primária pretos. */
+
 :root {
   --cor-fundo: grey;
   --cor-texto: black;
@@ -7,18 +7,14 @@
   --fonte-padrao: Arial, sans-serif;
 }
 
-/* Função: Aplica as variáveis na página inteira e define a fonte padrão. */
+
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   font-family: var(--fonte-padrao);
 }
 
-/* =========================================
-   2. Cabeçalho e Menu de Navegação
-   ========================================= */
 
-/* Função: Organiza os links lado a lado e centralizados usando Flexbox, e aplica a cor de fundo. */
 nav {
   display: flex;
   justify-content: center;
@@ -27,56 +23,48 @@ nav {
   padding: 15px;
 }
 
-/* Função: Estiliza os textos clicáveis do menu, tirando o sublinhado e deixando em negrito e branco. */
+
 nav a {
   color: white; 
   text-decoration: none;
   font-weight: bold; 
 }
 
-/* =========================================
-   3. Interatividade (Controlados pelo JavaScript)
-   ========================================= */
 
-/* Função: Ativado pelo botão de Modo Noturno. Substitui as variáveis para cores escuras. */
 body.dark-mode {
   --cor-fundo: #0F172A;
   --cor-texto: #F8FAFC;
   --cor-primaria: #002244; 
 }
 
-/* Função: Garante que as letras do menu continuem brancas no tema escuro. */
+
 body.dark-mode nav a {
   color: white;
 }
 
-/* Função: Ativado pelo botão de acessibilidade para aumentar a fonte em 20%. */
+
 body.fonte-maior {
   font-size: 1.2rem;
 }
 
-/* Função: Ativado pelo botão de acessibilidade para diminuir a fonte em 10%. */
+
 body.fonte-menor {
   font-size: 0.9rem;
 }
 
-/* =========================================
-   4. Funcionalidades da Lista de Músicas
-   ========================================= */
 
-/* Função: Classe utilitária usada pelo JavaScript para esconder os reprodutores de música da tela. */
 .oculto {
     display: none;
 }
 
-/* Função: Dá um espaço abaixo de cada música e remove as bolinhas padrão da lista. */
+
 .lista-musicas li {
     margin-bottom: 25px;
     list-style: none; 
 }
 
 .btn-toggle-musica {
-/* link simples em um botão estilizado para ativar/desativar a música. */
+
     color: black;
     border: none;
     border-radius: 5px;
@@ -84,12 +72,12 @@ body.fonte-menor {
     font-weight: bold;
 }
 
-/* efeito visual quando o mouse passa por cima do botão. */
+
 .btn-toggle-musica:hover {
     opacity: 0.8;
 }
 
-/* botão quando o Modo Noturno estiver ligado. */
+
 body.dark-mode .btn-toggle-musica {
     color: red;
     background-color: #002244;
