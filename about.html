@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div style="padding: 10px; display: flex; gap: 10px; justify-content: flex-end;">
+        <button id="btn-dark-mode">Ativar Modo Noturno</button>
+        <button id="btn-aumentar-fonte">Aumentar Fonte</button>
+        <button id="btn-diminuir-fonte">Diminuir Fonte</button>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">Sobre Mim</a> | 
+        <a href="curriculo.html">Currículo</a> | 
+        <a href="contato.html">Contato</a> | 
+        <a href="receita.html">Receitas</a>
+    </nav>
+
+    <header style="text-align: center;">
+        <img src="assets/Arthur.jpeg" alt="Foto de Arthur" style="width: 220px; height: 350px; border: 4px solid #333; border-radius: 8px; object-fit: cover; margin-bottom: 15px;">
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <p>Meu nome é Arthur Alves Miranda, tenho 20 anos e estou cursando Ciências da Computação no primeiro semestre.</p>
+    
+    <h1>Músicas Preferidas</h1>
+    <ul>
+        <li>
+            <strong>Charlie Brown Jr - Céu Azul</strong>
+            <button class="btn-toggle-musica">Mostrar Música</button>
+            <div class="iframe-container oculto">
+                <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 10px;" src="https://open.spotify.com/embed/track/3cqeso9qMA6HoISorEoFfk?utm_source=generator&theme=0&si=74c811be47554a4e" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </li>
+        <li>
+            <strong>Dudu Mc - Monstro</strong>
+            <button class="btn-toggle-musica">Mostrar Música</button>
+            <div class="iframe-container oculto">
+                <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 10px;" src="https://open.spotify.com/embed/track/4EH1497hGrC9rDdok3qQ4N?utm_source=generator&theme=0&si=cc714624e2ab4a3b" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </li>
+        <li>
+            <strong>Racionais MC's - Jesus Chorou</strong>
+            <button class="btn-toggle-musica">Mostrar Música</button>
+            <div class="iframe-container oculto">
+                <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 10px;" src="https://open.spotify.com/embed/track/5wZUvwWGKaZ6NG8yckZcTM?utm_source=generator&theme=0&si=2e18c23a3ee847f8" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </li>
+        <li>
+            <strong>Matuê- 333</strong>
+            <button class="btn-toggle-musica">Mostrar Música</button>
+            <div class="iframe-container oculto">
+                <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 10px;" src="https://open.spotify.com/embed/track/7zILDYgo1dImCU8fcYuBdj?utm_source=generator&theme=0&si=6b0b37bb85bf4027" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </li>
+        <li>
+            <strong>Filipe Ret- Invicto</strong>
+            <button class="btn-toggle-musica">Mostrar Música</button>
+            <div class="iframe-container oculto">
+                <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 10px;" src="https://open.spotify.com/embed/track/26iIVLdPn5nhmMwiuGKK3F?utm_source=generator&theme=0&si=4e9b1c0128c44921" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </li>
+    </ul>
+
+    <h1>Hobbies</h1>
+    <ul>
+        <li>Futebol</li>
+        <li>Ouvir Musica</li>
+        <li>Inter</li>
+        <li>Jogar videogame (Fifa)</li>
+    </ul>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
