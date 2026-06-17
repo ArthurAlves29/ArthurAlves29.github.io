@@ -1,4 +1,4 @@
-// 1. MODO NOTURNO
+
 const btnDarkMode = document.getElementById('btn-dark-mode');
 if (btnDarkMode) {
     btnDarkMode.addEventListener('click', function() {
@@ -6,7 +6,7 @@ if (btnDarkMode) {
     });
 }
 
-// 2. FORMULÁRIO DE CONTATO (Só roda se o formulário existir na página)
+
 const formulario = document.getElementById('form-contato');
 if (formulario) {
     formulario.addEventListener('submit', function(evento) {
@@ -16,7 +16,7 @@ if (formulario) {
     });
 }
 
-// 3. AUMENTAR E DIMINUIR FONTE (Só roda se os botões existirem na página)
+
 let tamanhoFonte = 100;
 const btnAumentar = document.getElementById('btn-aumentar-fonte');
 const btnDiminuir = document.getElementById('btn-diminuir-fonte');
@@ -34,4 +34,24 @@ if (btnAumentar && btnDiminuir) {
         }
     });
 }
+
+
+const botoesMusica = document.querySelectorAll('.btn-toggle-musica');
+
+botoesMusica.forEach(function(botao) {
+    botao.addEventListener('click', function() {
+        
+        const containerMusica = this.nextElementSibling;
+        
+        
+        containerMusica.classList.toggle('oculto');
+        
+        
+        if (containerMusica.classList.contains('oculto')) {
+            this.textContent = 'Mostrar Música';
+        } else {
+            this.textContent = 'Ocultar Música';
+        }
+    });
+});
 
